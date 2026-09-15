@@ -308,7 +308,7 @@ export default function Home() {
                       {toolConfig.fileIcon}
                     </ListItemIcon>
                     <ListItemText 
-                      primary={<Typography variant="body2" fontWeight={500}>{file.name}</Typography>} 
+                      primary={<Typography variant="body2" sx={{ fontWeight: 500 }}>{file.name}</Typography>} 
                       secondary={<Typography variant="caption">{`${(file.size / 1024 / 1024).toFixed(2)} MB`}</Typography>} 
                       className="truncate"
                     />
