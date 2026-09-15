@@ -38,6 +38,7 @@ export const convertWordToPdf = async (file: File): Promise<Blob> => {
 
 export const convertPdfToWord = async (file: File): Promise<Blob> => {
   // Dynamically import pdfjs legacy build to prevent Next.js Webpack evaluation crashes
+  // @ts-expect-error - TS cannot find declaration file for the minified legacy path
   const pdfjsModule = await import("pdfjs-dist/legacy/build/pdf.min.mjs");
   const pdfjsLib = pdfjsModule.default || pdfjsModule;
   if (typeof window !== "undefined") {
