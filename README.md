@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ Client-Side Document Conversion Tool
 
-## Getting Started
+A fast, secure, and privacy-focused web application that allows users to convert files directly in their browser. Built with modern web technologies to ensure your sensitive documents never leave your device.
 
-First, run the development server:
+**🌍 Live Demo:** [https://your-deployment-link-here.vercel.app](https://your-deployment-link-here.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📸 Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Conversion Tool Demo](./public/demo.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **🖼️ Photo to PDF**: Convert one or multiple JPEG/PNG images into a single, perfectly scaled PDF document.
+- **📝 Word to PDF**: Extract text from `.docx` files and generate a formatted PDF document.
+- **📄 PDF to Word**: Extract text from PDF files and generate a `.docx` Microsoft Word document.
+- **🔒 100% Client-Side**: All conversions happen securely inside your browser. No files are ever uploaded, sent, or saved to an external server, ensuring complete data privacy and lightning-fast speeds.
+- **🎨 Modern UI**: A clean, responsive, and intuitive interface powered by Material-UI and styled with Tailwind CSS.
 
-## Learn More
+## 🚀 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 14](https://nextjs.org/) (React App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Material-UI (MUI)](https://mui.com/)
+- **PDF Generation**: [jsPDF](https://github.com/parallax/jsPDF)
+- **Word Parsing**: [Mammoth.js](https://github.com/mwilliamson/mammoth.js)
+- **PDF Parsing**: [PDF.js (pdfjs-dist)](https://mozilla.github.io/pdf.js/)
+- **Word Generation**: [docx](https://docx.js.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Follow these instructions to run the project locally on your machine.
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes with Node.js)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see and use the application.
+
+
