@@ -55,6 +55,7 @@ export const convertPdfToWord = async (file: File): Promise<Blob> => {
     const page = await pdf.getPage(i);
     const content = await page.getTextContent();
     // Concatenate all text items on this page
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const strings = content.items.map((item: any) => item.str);
     fullText += strings.join(" ") + "\n\n";
   }
